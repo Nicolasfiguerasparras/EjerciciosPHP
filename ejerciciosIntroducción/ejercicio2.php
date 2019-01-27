@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,7 +6,24 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+            $variableInt=34;
+            $variableBoolean=true;
+            $variableString="Hola";
+            $array[]=$variableInt;
+            $array[]=$variableBoolean;
+            $array[]=$variableString;
+            echo "<table border='1px'>";
+                echo "<tr>";
+                    echo "<td>0</td>";
+                    echo "<td>1</td>";
+                    echo "<td>2</td>";
+                echo "</tr>";
+                echo "<tr>";
+                    echo "<td>$array[0]</td>";
+                    echo "<td>$array[1]</td>";
+                    echo "<td>$array[2]</td>";
+                echo "</tr>";
+            echo "</table>";
         ?>
     </body>
 </html>
