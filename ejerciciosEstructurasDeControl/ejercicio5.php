@@ -10,9 +10,14 @@
     </head>
     <body>
         <?php
-            $cadena1="Astrónomo";
-            $cadena2="Zutaten";
-            $cadena3="Diccionario";
+            $cadena[]="Astrónomo";
+            $cadena[]="Zutaten";
+            $cadena[]="Diccionario";
+            sort($cadena);
+            
+            for($i=0;$i<3;$i++){
+                echo $cadena[$i]."<br>";
+            }
         ?>
     </body>
 </html>
